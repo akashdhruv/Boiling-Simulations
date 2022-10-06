@@ -1,0 +1,12 @@
+[submodule "software/amrex"]
+	path = software/amrex
+	url = git@github.com:AMReX-Codes/amrex.git
+[submodule "software/flashx"]
+	path = software/flashx
+	url = git@github.com:Flash-X/Flash-X.git
+[submodule "software/boxkit"]
+	path = software/boxkit
+	url = git@github.com:akashdhruv/BoxKit.git
+[submodule "software/flashkit"]
+	path = software/flashkit
+	url = git@github.com:akashdhruv/FlashKit.git

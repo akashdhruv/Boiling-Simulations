@@ -1,0 +1,15 @@
+__pycache__
+INS*
+*.png
+!*.log
+!*.csv
+*.out
+amr_*
+Backtrace*
+flash.par
+job_setup.sh
+job_run.sh
+flashx
+!software/flashx
+unitTest*
+core*
