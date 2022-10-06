@@ -1,0 +1,91 @@
+# Inverse of Reynolds Number
+ins_invReynolds   = .004
+
+# 1/Fr**2, Fr (Froude Number)
+ins_gravY           = -1.0
+
+# Gas density and viscosity scaled by liquid
+mph_rhoGas  = 0.005
+mph_muGas   = 0.02
+mph_iPropSmear = 1.0
+
+# Gas thermal conductivity and specific heat
+mph_thcoGas = 0.2
+mph_CpGas   = 0.8
+
+# Stefan number and saturation temperature
+mph_Stefan  = 0.50
+mph_Tsat    = 0.20
+
+# Inverse Weber Number
+mph_invWeber = 1.0
+
+# Prandtl number
+ht_Prandtl = 8.0
+
+# Heater parameters
+sim_nucSeedRadius =  0.1 # Re-nucleation seed size
+sim_numHeaters    =  1   # Number of heaters
+sim_heaterName    = "flow_boiling"
+sim_heaterShowInfo = .FALSE.
+
+# Outlet parameters
+sim_outletBuffer = 0.1 # Outlet Buffer
+
+#       Grid dimensionality and geometry
+geometry	= "cartesian"
+
+#       Size of computational volume
+xmin		= -8.0
+xmax		=  8.0
+ymin		=  0.0
+ymax		=  5.0
+zmin            = -2.5
+zmax            =  2.5
+
+#       Boundary conditions
+xl_boundary_type = "inflow_ins"
+xr_boundary_type = "outflow_ins"
+yl_boundary_type = "noslip_ins"
+yr_boundary_type = "slip_ins"
+zl_boundary_type = "slip_ins"
+zr_boundary_type = "slip_ins"
+
+#       Simulation (grid, time, I/O) parameters
+run_comment	= "Flow Boiling problem"
+log_file	= "INS_Flow_Boiling.log"
+basenm		= "INS_Flow_Boiling_"
+restart         = .false.
+nend            = 10000000
+tmax            = 40.
+ins_cflFlg      = 1
+ins_cfl         = 0.05
+ins_sigma	= 0.05
+ins_dtSpec      = 0.1d-3
+dtinit          = 0.1d-3
+tstep_change_factor = 1.01
+ins_pressureCorrect = .false.
+
+#Integration Scheme:
+ins_intSchm            = 2
+
+plot_var_1	= "pres"
+plot_var_2      = "velx"
+plot_var_3      = "vely"
+plot_var_4      = "dfun"
+plot_var_5      = "temp"  
+plot_var_6      = "dust"
+
+checkpointFileNumber = 0
+checkpointFileIntervalTime = 0.5
+checkpointFileIntervalStep = 5000
+
+plotFileNumber = 0
+plotFileIntervalTime = 0.1
+plotFileIntervalStep = 1000
+ignoreForcedPlot = .TRUE.
+
+# AMR parameters
+nblockx	= 32
+nblocky	= 10
+nblockz = 10

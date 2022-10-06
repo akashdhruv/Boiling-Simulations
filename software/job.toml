@@ -1,0 +1,9 @@
+# TOML configuration file for `jobrunner`.
+
+# List of files that need to be included when
+# setting up a job
+config.setup = [
+    "amrex.sh",
+    "flashkit.sh",
+    "boxkit.sh",
+]

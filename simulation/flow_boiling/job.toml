@@ -1,0 +1,17 @@
+# TOML configuration file for `jobrunner`.
+
+# Schedular configuration resources requirement
+# job name etc
+config.schedular = [
+    "#SBATCH --ntasks=5",
+    "#SBATCH -t 0-30:00",
+    "#SBATCH --job-name=flow_boiling",
+]
+
+# List of files that need to be included when
+# setting up a job
+config.setup = ["build.sh"]
+
+# List of files to be included 
+# in submit script
+config.submit = ["flow_boiling_heater.sh"]
