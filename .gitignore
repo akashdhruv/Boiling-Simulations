@@ -1,5 +1,6 @@
 __pycache__
-INS*
+*hdf5*
+*.dat
 *.png
 !*.log
 !*.csv
@@ -8,7 +9,7 @@ amr_*
 Backtrace*
 flash.par
 job_setup.sh
-job_run.sh
+job_submit.sh
 flashx
 !software/flashx
 unitTest*

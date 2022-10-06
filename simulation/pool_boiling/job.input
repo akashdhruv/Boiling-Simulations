@@ -1,27 +1,27 @@
 # Inverse of Reynolds Number
-ins_invReynolds   = .004
+ins_invReynolds   = .0042
 
 # 1/Fr**2, Fr (Froude Number)
 ins_gravY           = -1.0
 
 # Gas density and viscosity scaled by liquid
-mph_rhoGas  = 0.005
-mph_muGas   = 0.02
+mph_rhoGas  = 0.0083
+mph_muGas   = 1.0
 mph_iPropSmear = 1.0
 
 # Gas thermal conductivity and specific heat
-mph_thcoGas = 0.2
-mph_CpGas   = 0.8
+mph_thcoGas = 0.25
+mph_CpGas   = 0.83
 
 # Stefan number and saturation temperature
-mph_Stefan  = 0.50
-mph_Tsat    = 0.20
+mph_Stefan  = 0.5298
+mph_Tsat    = 0.15
 
 # Inverse Weber Number
 mph_invWeber = 1.0
 
 # Prandtl number
-ht_Prandtl = 8.0
+ht_Prandtl = 8.4
 
 # Heater parameters
 sim_nucSeedRadius =  0.1 # Re-nucleation seed size
@@ -29,8 +29,8 @@ sim_numHeaters    =  1   # Number of heaters
 sim_heaterName    = "pool_boiling"
 sim_heaterShowInfo = .FALSE.
 
-# Inlet/Outlet parameters
-sim_outletBuffer = 0.1 # Outlet buffer region
+# Outlet parameters
+sim_outletBuffer =  0.1 # Outlet buffer region
 
 #       Grid dimensionality and geometry
 geometry	= "cartesian"
@@ -57,7 +57,7 @@ log_file	= "INS_Pool_Boiling.log"
 basenm		= "INS_Pool_Boiling_"
 restart         = .false.
 nend            = 10000000
-tmax            = 60.
+tmax            = 40.
 ins_cflFlg      = 1
 ins_cfl         = 0.05
 ins_sigma	= 0.05
@@ -78,11 +78,10 @@ plot_var_6      = "dust"
 
 checkpointFileNumber = 0
 checkpointFileIntervalTime = 5.0
-checkpointFileIntervalStep = 500000
 
 plotFileNumber = 0
 plotFileIntervalTime = 1.0
-plotFileIntervalStep = 100000
+
 ignoreForcedPlot = .TRUE.
 
 # AMR parameters

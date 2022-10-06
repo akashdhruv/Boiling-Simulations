@@ -77,12 +77,11 @@ plot_var_5      = "temp"
 plot_var_6      = "dust"
 
 checkpointFileNumber = 0
-checkpointFileIntervalTime = 0.5
-checkpointFileIntervalStep = 5000
+checkpointFileIntervalTime = 5.0
 
 plotFileNumber = 0
-plotFileIntervalTime = 0.1
-plotFileIntervalStep = 1000
+plotFileIntervalTime = 1.0
+
 ignoreForcedPlot = .TRUE.
 
 # AMR parameters
