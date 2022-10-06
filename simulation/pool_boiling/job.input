@@ -88,3 +88,21 @@ ignoreForcedPlot = .TRUE.
 nblockx	= 24
 nblocky	= 24
 nblockz = 24
+
+# Input file to set runtime parameters
+
+# Set highest number for update 
+# refinement step since in pseudo UG mode
+nfres   = 10000000
+
+# lrefine min/max since in UG mode
+lrefine_min       = 1
+lrefine_max       = 1
+
+# Flux Conservation for AMR
+flux_correct    = .true.
+
+# AMReX Poisson Solver Parameters
+gr_amrexMG_composite_solve = ".TRUE."
+gr_amrexMG_Tol = 1e-13
+gr_amrexMG_max_iter = 200
