@@ -20,11 +20,11 @@ jobrunner setup software
 Setup simulation
 
 ```
-jobrunner setup simulation
+jobrunner setup simulation/pool_boiling
 ```
 
 Run simulation
 
 ```
-jobrunner submmit simulation
+jobrunner submit simulation/pool_boiling
 ```
