@@ -13,8 +13,8 @@ module load openmpi-4.1.1
 module load hdf5-1.8.20
 
 # Path for amrex
-export AMREX2D_HOME=$JOB_FILE_HOME/software/amrex/install/2D
-export AMREX3D_HOME=$JOB_FILE_HOME/software/amrex/install/3D
+export AMREX2D_HOME=$JOB_FILE_HOME/software/AMReX/install/2D
+export AMREX3D_HOME=$JOB_FILE_HOME/software/AMReX/install/3D
 
 # Path to flashx
-export FLASHX_HOME=$JOB_FILE_HOME/software/flashx
+export FLASHX_HOME=$JOB_FILE_HOME/software/Flash-X

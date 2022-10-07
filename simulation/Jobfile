@@ -2,4 +2,4 @@
 
 # List of files that need to be included when
 # setting up a job
-config.setup = ["configure.sh"]
+config.setup = ["configFlash.sh"]

@@ -5,11 +5,11 @@
 cd $JOB_FILE_HOME
 
 # Initialize amrex submodule
-git submodule update --init $JOB_FILE_HOME/amrex
+git submodule update --init $JOB_FILE_HOME/AMReX
 
 # chdir into amrex,
 # and checkout the desired SHA
-cd $JOB_FILE_HOME/amrex
+cd $JOB_FILE_HOME/AMReX
 
 # configure and install amrex in 2D
 make clean

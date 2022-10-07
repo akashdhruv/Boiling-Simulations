@@ -3,8 +3,8 @@
 # List of files that need to be included when
 # setting up a job
 config.setup = [
-    "amrex.sh",
-    "flashkit.sh",
-    "boxkit.sh",
-    "flashx.sh",
+    "setupAMReX.sh",
+    "setupFlashKit.sh",
+    "setupBoxKit.sh",
+    "setupFlashX.sh",
 ]
