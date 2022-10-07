@@ -6,5 +6,5 @@ config.setup = [
     "setupAMReX.sh",
     "setupFlashKit.sh",
     "setupBoxKit.sh",
-    "setupFlashX.sh",
+    "setupFlash.sh",
 ]
