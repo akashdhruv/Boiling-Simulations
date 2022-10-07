@@ -5,7 +5,7 @@
 Install `jobrunner`
 
 ```
-pip3 install PyJobrunner==0.0.2
+pip3 install PyJobrunner==0.0.3
 ```
 
 
