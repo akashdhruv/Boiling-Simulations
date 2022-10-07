@@ -6,4 +6,5 @@ config.setup = [
     "amrex.sh",
     "flashkit.sh",
     "boxkit.sh",
+    "flashx.sh",
 ]

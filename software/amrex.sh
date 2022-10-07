@@ -1,6 +1,9 @@
 # Bash script for `jobrunner` to install
 # amrex
 
+# chdir into current file directory
+cd $JOB_FILE_HOME
+
 # Initialize amrex submodule
 git submodule update --init $JOB_FILE_HOME/amrex
 
