@@ -5,8 +5,9 @@
 Install `jobrunner`
 
 ```
-pip3 install PyJobrunner==0.0.1
+pip3 install PyJobrunner==0.0.2
 ```
+
 
 Update `PATH` to include `$HOME/local/bin` where `jobrunner` command line interface is located
 

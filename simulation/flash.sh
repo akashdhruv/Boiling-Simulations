@@ -4,4 +4,4 @@
 git submodule update --init $FLASHX_HOME
 
 # set Flash-X makefile PATH
-export FLASHX_SITE=$JOB_FILEDIR
+export FLASHX_SITE=$JOB_FILE_HOME

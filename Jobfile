@@ -6,7 +6,7 @@
 # `jobrunner` should be called from the root of
 # a project directory to execute commands in a desired working directory. 
 #
-# All `job.toml` files present in a directory tree 
+# All `Jobfile` files present in a directory tree 
 # are combined to a single dictionary during `setup` 
 # or `submit` commands
 

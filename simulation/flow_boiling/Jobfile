@@ -1,0 +1,29 @@
+# TOML configuration file for `jobrunner`.
+
+# job schedular command for deploying
+# simulations
+schedular.command = "sbatch"
+
+# schedular resources requirement
+# job name etc
+schedular.options = [
+    "#SBATCH --ntasks=5",
+    "#SBATCH -t 0-30:00",
+    "#SBATCH --job-name=flow_boiling",
+]
+
+# job input file name. All config.input in
+# directory tree will be combined to form
+# job.input in target directory
+config.input = "flash.par"
+
+# target script that runs the job
+config.target = "flash.sh"
+
+# list of files that need to be included when
+# setting up a job
+config.setup = ["build.sh"]
+
+# list of files to be included
+# in submit script
+config.submit = ["heater.sh"]
