@@ -7,9 +7,9 @@ __pycache__
 *.out
 amr_*
 Backtrace*
-flash.par
-job_setup.sh
-job_submit.sh
+job.setup
+job.submit
+job.input
 flashx
 !software/flashx
 unitTest*
