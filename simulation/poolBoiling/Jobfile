@@ -12,6 +12,9 @@ schedular.options = [
     "#SBATCH --job-name=pool_boiling",
 ]
 
+# list of file/patterns to archive
+config.archive = ["INS*", "*_hdf5_*"]
+
 # job input file name. All config.input in
 # directory tree will be combined to form
 # job.input in target directory
@@ -20,8 +23,8 @@ config.input = "flash.par"
 # target script that runs the job
 config.target = "runFlash.sh"
 
-# list of files that need to be included when
-# setting up a job
+# list of files that need to be
+# included when setting up a job
 config.setup = ["buildFlash.sh"]
 
 # list of files to be included

@@ -1,2 +1,2 @@
 # `jobrunner` exec script
-mpirun $JOB_TARGET_HOME/flashx -par_file job.input
+mpirun $JOB_WORKDIR/flashx -par_file job.input

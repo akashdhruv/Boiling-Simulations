@@ -1,3 +1,3 @@
 # Setup heater files
 
-python3 $JOB_FILE_HOME/pool_boiling_heater.py
+python3 $JOB_TREEDIR/pool_boiling_heater.py

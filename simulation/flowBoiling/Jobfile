@@ -12,6 +12,9 @@ schedular.options = [
     "#SBATCH --job-name=flow_boiling",
 ]
 
+# list of file/patterns to archive
+config.archive = ["INS", "*_hdf5_*"]
+
 # job input file name. All config.input in
 # directory tree will be combined to form
 # job.input in target directory
