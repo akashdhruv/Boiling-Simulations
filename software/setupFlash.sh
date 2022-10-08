@@ -1,7 +1,7 @@
 # initialize Flash-X submodule
 
 # chdir into current file directory
-cd $JOB_TREEDIR
+cd $JobTreeDir
 
 # initialize submodules
-git submodule update --init $JOB_TREEDIR/Flash-X
+git submodule update --init $JobTreeDir/Flash-X

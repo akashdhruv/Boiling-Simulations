@@ -2,14 +2,14 @@
 # amrex
 
 # chdir into current file directory
-cd $JOB_TREEDIR
+cd $JobTreeDir
 
 # Initialize amrex submodule
-git submodule update --init $JOB_TREEDIR/AMReX
+git submodule update --init $JobTreeDir/AMReX
 
 # chdir into amrex,
 # and checkout the desired SHA
-cd $JOB_TREEDIR/AMReX
+cd $JobTreeDir/AMReX
 
 # configure and install amrex in 2D
 make clean
