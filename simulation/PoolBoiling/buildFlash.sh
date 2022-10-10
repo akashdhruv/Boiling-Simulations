@@ -1,9 +1,12 @@
-# chdir into Flash-X home directory
-cd $FLASH_HOME
-
 # setup the problem
-./setup incompFlow/PoolBoiling -auto -2d -nxb=16 -nyb=16 -maxblocks=100 \
+cd $FLASH_HOME && ./setup incompFlow/PoolBoiling -auto -2d -nxb=16 -nyb=16 -maxblocks=100 \
 	-site=$FlashSite +amrex +parallelIO SimForceInOut=True IOWriteGridFiles=True
 
-# compile, copy and destroy object
-cd object && make -j && cp flashx $JobTreeDir/flashx && cd .. && rm -rf object
+# compile the simulation and copy files
+cd $FLASH_HOME/object && make -j && cp flashx Makefile.h setup_call $JobNodeDir/
+
+# copy AMReX configuration
+cd $AMREX2D_HOME/lib/pkgconfig && cp amrex.pc $JobNodeDir/
+
+# chdir into node directory and do clean up
+cd $JobNodeDir && rm -rf $FLASH_HOME/object

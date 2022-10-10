@@ -13,8 +13,11 @@ module load openmpi-4.1.1
 module load hdf5-1.8.20
 
 # Store path to amrex as environment variable
-export AMREX2D_HOME=$JobTreeDir/software/AMReX/install/2D
-export AMREX3D_HOME=$JobTreeDir/software/AMReX/install/3D
+export AMREX2D_HOME=$JobNodeDir/software/AMReX/install/2D
+export AMREX3D_HOME=$JobNodeDir/software/AMReX/install/3D
 
 # Path to Flash-X
-export FLASH_HOME=$JobTreeDir/software/Flash-X
+export FLASH_HOME=$JobNodeDir/software/Flash-X
+
+# Path to Flash-X site/makefile
+FlashSite=$JobNodeDir/sites/hello

@@ -1,15 +1,11 @@
 # Bash script for `jobrunner` to install
 # amrex
 
-# chdir into current file directory
-cd $JobTreeDir
-
 # Initialize amrex submodule
-git submodule update --init $JobTreeDir/AMReX
+git submodule update --init $JobNodeDir/AMReX
 
 # chdir into amrex,
-# and checkout the desired SHA
-cd $JobTreeDir/AMReX
+cd $JobNodeDir/AMReX
 
 # configure and install amrex in 2D
 make clean
