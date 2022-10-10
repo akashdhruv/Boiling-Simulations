@@ -1,3 +1,8 @@
-# Setup heater files
+# Run pre-processing scripts located
+# in the current directory
 
-python3 $JobNodeDir/flow_boiling_heater.py
+# cache the value of current node
+NodeDir=$PWD
+
+# chdir into working directory and execute
+cd $JobWorkDir && python3 $NodeDir/flow_boiling_heater.py

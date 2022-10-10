@@ -2,10 +2,10 @@
 # amrex
 
 # Initialize amrex submodule
-git submodule update --init $JobNodeDir/AMReX
+git submodule update --init AMReX
 
-# chdir into amrex,
-cd $JobNodeDir/AMReX
+# chdir into amrex and checkout desired branch
+cd AMReX && git checkout cff96a9
 
 # configure and install amrex in 2D
 make clean
