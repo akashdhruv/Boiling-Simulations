@@ -27,7 +27,7 @@ job.archive = [
 job.input = "flash.par"
 
 # target script that runs the job
-job.target = "runFlash.sh"
+job.target = "flashx"
 
 # list of files that need to be
 # included when setting up a job
@@ -35,4 +35,4 @@ job.setup = ["buildFlash.sh"]
 
 # list of files to be included
 # in submit script
-job.submit = ["preProcess.sh"]
+job.submit = ["preProcess.sh", "runFlash.sh"]
