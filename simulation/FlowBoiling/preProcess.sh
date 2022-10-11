@@ -2,4 +2,4 @@
 NodeDir=$(realpath .)
 
 # Run pre-processing scripts located in the current directory to setup
-cd $JobWorkDir && python3 $NodeDir/flow_boiling_heater.py
+cd $JobWorkDir && python3 $NodeDir/flowBoilingHeater.py
