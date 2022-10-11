@@ -1,4 +1,4 @@
-# cache the value of current node
+# cache the value of current working directory
 NodeDir=$PWD
 
 # setup the problem

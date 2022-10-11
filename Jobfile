@@ -1,19 +1,19 @@
-# TOML configuration file for `jobrunner`.
+# TOML configuration file for jobrunner
 #
 # This file provides an organizational structure
 # for bash files spread all over the repository
 #
-# `jobrunner` should be called from the root of
-# a project directory to execute commands in a desired working directory. 
+# jobrunner should be called from the root of
+# a project directory to execute commands in a desired working directory.
 #
-# All `Jobfile` files present in a directory tree 
-# are combined to a single dictionary during `setup` 
-# or `submit` commands
+# All Jobfiles present in a directory tree
+# are combined to a single dictionary when executing
+# jobrunner commands
 
 # List of files that need to be included when
 # setting up a job
-config.setup = ["environment.sh"]
+job.setup = ["environment.sh"]
 
 # List of files that need to be included when
 # submitting a job
-config.submit = ["environment.sh"]
+job.submit = ["environment.sh"]

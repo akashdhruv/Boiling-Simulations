@@ -1,4 +1,4 @@
-# cache the value of current node directory
+# cache the value of current directory
 NodeDir=$PWD
 
 # Run the actualy job using this target script

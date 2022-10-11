@@ -13,7 +13,7 @@ schedular.options = [
 ]
 
 # list of file/patterns to archive
-config.archive = [
+job.archive = [
     "INS*",
     "*_hdf5_*",
     "Makefile.h",
@@ -21,18 +21,18 @@ config.archive = [
     "amrex.pc",
 ]
 
-# job input file name. All config.input in
+# job input file name. All job.input in
 # directory tree will be combined to form
 # job.input in target directory
-config.input = "flash.par"
+job.input = "flash.par"
 
 # target script that runs the job
-config.target = "runFlash.sh"
+job.target = "runFlash.sh"
 
 # list of files that need to be included
 # when setting up a job
-config.setup = ["buildFlash.sh"]
+job.setup = ["buildFlash.sh"]
 
 # list of files to be included
 # when creating a submit script
-config.submit = ["preProcess.sh"]
+job.submit = ["preProcess.sh"]

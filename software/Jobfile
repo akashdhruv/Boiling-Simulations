@@ -2,7 +2,7 @@
 
 # List of files that need to be included when
 # setting up a job
-config.setup = [
+job.setup = [
     "setupAMReX.sh",
     "setupFlashKit.sh",
     "setupBoxKit.sh",
