@@ -9,6 +9,7 @@ import numpy
 import h5py
 from scipy.stats import qmc
 
+
 def write_heater_info():
 
     filename = "pool_boiling_hdf5_htr_0001"
@@ -39,8 +40,8 @@ def write_heater_info():
     halton = qmc.Halton(d=2, seed=1)
     haltonSample = halton.random(nuc_numSites)
 
-    nuc_xSite[:] = htr_xMin + haltonSample[:,0]*(htr_xMax-htr_xMin)
-    nuc_zSite[:] = htr_zMin + haltonSample[:,1]*(htr_zMax-htr_zMin)
+    nuc_xSite[:] = htr_xMin + haltonSample[:, 0] * (htr_xMax - htr_xMin)
+    nuc_zSite[:] = htr_zMin + haltonSample[:, 1] * (htr_zMax - htr_zMin)
     nuc_ySite[:] = 1e-13
     nuc_radii[:] = 0.2
 

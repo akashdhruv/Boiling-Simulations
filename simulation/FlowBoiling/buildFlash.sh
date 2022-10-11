@@ -1,5 +1,5 @@
 # cache the value of current working directory
-NodeDir=$PWD
+NodeDir=$(realpath .)
 
 # setup the problem
 cd $FLASH_HOME && ./setup incompFlow/FlowBoiling -auto -2d -nxb=16 -nyb=16 -maxblocks=100 \

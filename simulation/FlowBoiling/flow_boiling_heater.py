@@ -9,6 +9,7 @@ import numpy
 import h5py
 from scipy.stats import qmc
 
+
 def write_heater_info():
 
     filename = "flow_boiling_hdf5_htr_0001"
@@ -16,11 +17,11 @@ def write_heater_info():
     filename_write = h5py.File(filename, "w")
 
     htr_xMin = -6.0
-    htr_xMax =  6.0
+    htr_xMax = 6.0
     htr_zMin = -2.5
-    htr_zMax =  2.5
-    htr_yMin =  0.0
-    htr_yMax =  1e-13
+    htr_zMax = 2.5
+    htr_yMin = 0.0
+    htr_yMax = 1e-13
 
     htr_wallTemp = 1.0
 
@@ -41,8 +42,8 @@ def write_heater_info():
     halton = qmc.Halton(d=2, seed=1)
     haltonSample = halton.random(nuc_numSites)
 
-    nuc_xSite[:] = htr_xMin + haltonSample[:,0]*(htr_xMax-htr_xMin)
-    nuc_zSite[:] = htr_zMin + haltonSample[:,1]*(htr_zMax-htr_zMin)
+    nuc_xSite[:] = htr_xMin + haltonSample[:, 0] * (htr_xMax - htr_xMin)
+    nuc_zSite[:] = htr_zMin + haltonSample[:, 1] * (htr_zMax - htr_zMin)
     nuc_ySite[:] = 1e-13
     nuc_radii[:] = 0.2
 

@@ -12,6 +12,9 @@ module load openmpi-4.1.1
 # is present alter setup options for Flash-X
 module load hdf5-1.8.20
 
+# Export project home
+export PROJECT_HOME=$(realpath .)
+
 # Store path to amrex as environment variable
 export AMREX2D_HOME=$(realpath software/AMReX/install/2D)
 export AMREX3D_HOME=$(realpath software/AMReX/install/3D)
