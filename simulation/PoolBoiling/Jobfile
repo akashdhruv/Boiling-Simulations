@@ -24,7 +24,7 @@ job.archive = [
 # job input file name. All config.input in
 # directory tree will be combined to form
 # job.input in target directory
-job.input = "flash.par"
+job.input = ["flash.par"]
 
 # target script that runs the job
 job.target = "flashx"
