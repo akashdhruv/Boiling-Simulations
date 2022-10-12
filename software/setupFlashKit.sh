@@ -1,4 +1,8 @@
-# Bash file for `jobrunner` to install
-# `flashkit` for visualization
+# initialize FlashKit submodule
+git submodule update --init FlashKit
 
-echo FlashKit instructions to follow
+# chdir into FlashKit and checkout desired branch
+cd FlashKit && git checkout 364c99d
+
+# install in development mode
+python3 setup.py develop --user
