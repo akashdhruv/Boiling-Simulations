@@ -16,8 +16,8 @@ module load hdf5-1.8.20
 export PROJECT_HOME=$(realpath .)
 
 # Store path to amrex as environment variable
-export AMREX2D_HOME=$(realpath software/AMReX/install/2D)
-export AMREX3D_HOME=$(realpath software/AMReX/install/3D)
+export AMREX2D_HOME="$(realpath software/AMReX)/install/2D"
+export AMREX3D_HOME="$(realpath software/AMReX)/install/3D"
 
 # Path to Flash-X
 export FLASH_HOME=$(realpath software/Flash-X)
