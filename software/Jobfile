@@ -5,6 +5,5 @@
 job.setup = [
     "setupAMReX.sh",
     "setupFlashKit.sh",
-    "setupBoxKit.sh",
     "setupFlash.sh",
 ]

@@ -8,6 +8,3 @@
 [submodule "software/FlashKit"]
 	path = software/FlashKit
 	url = git@github.com:akashdhruv/FlashKit.git
-[submodule "software/BoxKit"]
-	path = software/BoxKit
-	url = git@github.com:akashdhruv/BoxKit.git
