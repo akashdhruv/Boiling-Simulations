@@ -1,5 +1,5 @@
-<p align="left">
-  <img src="./icon.gif" width="300" style="border:none;background:none;"/>
+<p align="center">
+  <img src="./icon.gif" width="400" style="border:none;background:none;"/>
 </p>
 
 ## Boiling Simulations
