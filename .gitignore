@@ -11,6 +11,5 @@ job.setup
 job.submit
 job.input
 flashx
-!software/flashx
 unitTest*
 core*
