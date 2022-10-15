@@ -2,7 +2,7 @@
   <img src="./icon.gif" width="400" style="border:none;background:none;"/>
 </p>
 
-## Boiling Simulations
+## <p align="center"> Boiling Simulations </p>
 
 ### Instructions
 
