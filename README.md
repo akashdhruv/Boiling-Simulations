@@ -1,4 +1,6 @@
-![icon](icon.gif)
+<p align="center">
+  <img src="./icon.gif" width="450" style="border:none;background:none;"/>
+</p>
 
 ## Boiling Simulations
 
