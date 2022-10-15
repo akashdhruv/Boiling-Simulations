@@ -2,7 +2,7 @@
 NodeDir=$(realpath .)
 
 # run Flash-X setup
-cd $FLASH_HOME && ./setup $FlashOptions -2d -nxb=16 -nyb=16
+cd $FLASH_HOME && ./setup $FlashOptions
 
 # compile the simulation and copy files
 cd $FLASH_HOME/object && make -j && cp flashx Makefile.h setup_call $NodeDir/
