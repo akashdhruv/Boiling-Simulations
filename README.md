@@ -1,4 +1,6 @@
-## Repository for Pool and Flow Boiling Simulations with Flash-X
+![icon](icon.gif)
+
+## Boiling Simulations
 
 ### Instructions
 
