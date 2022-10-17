@@ -51,6 +51,7 @@ $ tree Boiling-Simulations
     ├── hello
         ├── Makefile.h
 ├── software
+    ├── Jobfile
     ├── Flash-X
     ├── AMReX
     ├── FlashKit
@@ -66,31 +67,55 @@ $ tree Boiling-Simulations
             ├── flash.par
     ├── FlowBoiling
 ├── analysis
+    ├── Jobfile
     ├── requirements.txt
 ```
 
 The directory tree is divided into three major components $\textemdash$ software, simulation, and analysis $\textemdash$ which rely on a common environment configuration defined in `environment.sh`. 
 
-The ``software`` component provides all the software packages as submodules along with corresponding bash scripts to setup and install them.
+The ``software/`` component provides all the software packages as submodules along with corresponding bash scripts and a Jobfile to setup and install them.
+
+The ``simulation/`` component contains specific simulations as directory objects, with the ability to configure each of them with different flavors. As an example, ``simulation/PoolBoiling`` can be configured for 2D and 3D problems by creating sub-directories ``simulation/PoolBoiling/example2D`` and ``simulation/PoolBoiling/example3D`` with their respective options, Jobfiles, and commands.
+
+The ``analysis/`` component is designed to setup data analysis and machine learning workflows and is currently a work in progress.
 
 ## Usage
 
-Setup software stack
+Once a user has installed necessary libaries/tools, i.e., Jobrunner, MPI, HDF5, and ParaView, and designed their customized `environment.sh`, they can install the remaining software stack by running the following command from the project root directory,
 
 ```
 jobrunner setup software
 ```
 
-Setup simulation
+This command will checkout appropriate SHA-1 for Flash-X, AMReX, and FlashKit, and install them using base libraries and paths provided in ``environment.sh``
+
+Setting up a simulation is done in similar way by running setup command as,
 
 ```
-jobrunner setup simulation/pool_boiling
+jobrunner setup simulation/PoolBoiling/example2D
 ```
 
-Run simulation
+and then running it using,
 
 ```
-jobrunner submit simulation/pool_boiling
+jobrunner submit simulation/PoolBoiling/example2D
 ```
+
+Make sure to edit Jobfiles as desired to change/update your schedular configuration.
+
+
+To visualize data using ParaView run following from the working directory of a job run,
+
+```
+flashkit create xdmf -b <begin_number> -e <end_number>
+```
+
+The `<begin_number>` and `<end_number>` refer to the files containing the pattern `*_hdf5_plt_cnt_*`
 
 ## Contribution
+
+The `main` branch is protected. Please create pull request from your forks to this branch in order to update this lab notebook.
+
+## Help & Support
+
+Best way to get help and report bugs is to file an issue.
