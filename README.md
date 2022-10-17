@@ -10,6 +10,9 @@ Primary goal for this project is to provide a more organized interface to work w
 
 ## Dependencies
 
+Flash-X can enable use of various 
+
+
 ### Jobrunner
 
 Management of simulations and software stack is performed using Jobrunner (https://github.com/akashdhruv/Jobrunner)
