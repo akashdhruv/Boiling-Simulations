@@ -103,8 +103,7 @@ jobrunner submit simulation/PoolBoiling/example2D
 
 Make sure to edit Jobfiles as desired to change/update your schedular configuration.
 
-Hint: use `--show` with your `jobrunner setup` and `jobrunner submit` to see the parsed configuration for a working directory using Jobfiles along the directory tree
-
+TIP: use `--show` with `jobrunner setup` and `jobrunner submit` to see the parsed configuration for a working directory derived from Jobfiles along the directory tree.
 
 To visualize data using ParaView run following from the working directory of a job run,
 
