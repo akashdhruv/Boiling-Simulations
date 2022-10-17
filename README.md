@@ -1,8 +1,6 @@
-<p align="left">
-  <img src="./icon.gif" width="290" style="border:none;background:none;"/>
-</p>
+<p align="center"> <img src="./icon.gif" width="350" style="border:none;background:none;"/> </p>
 
-# <p align="left"> Boiling Simulations </p>
+# <p align="center"> Boiling Simulations </p>
 
 This repository provides a template for a lab notebook for running pool and flow boiling simulations using Flash-X (https://github.com/Flash-X/Flash-X), a multiphysics scientific software instrument. Design and organization of this notebook serves as a tutorial to setup production simulations for multiphase fluid-flow problems, archive data, perform visualization and data analysis, and maintain records/notes for scientific reproducibility and accountability. 
 
@@ -10,12 +8,19 @@ Primary goal for this project is to provide a more organized interface to work w
 
 ## Dependencies
 
-Flash-X can enable use of various 
+A comprehensive lab environment to work with high-fidelity simulations should include,
 
+- A scalable and performant computational solver.
+- A well organized design of computational experiments that can handle complexities of parametric studies.
+- Visualization tools to generate animations/images.
+- Tools to extract/process information from simulation data to perform statistical/data analysis.
 
-### Jobrunner
+Flash-X addresses the first requirement by using AMReX (https://github.com/AMReX-Codes/amrex) $\textemdash$ a framework for block-structured Adaptive Mesh Refinement (AMR) $\textemdash$ for grid management, along with its native Application Programming Interface (API) to solve complex multiphase problems. Details of the numerical solver can be found in our previous publications,
 
-Management of simulations and software stack is performed using Jobrunner (https://github.com/akashdhruv/Jobrunner)
+- [A Formulation for High-Fidelity Simulations of Pool Boiling in Low Gravity](https://www.sciencedirect.com/science/article/abs/pii/S030193221930165X)
+- [An Investigation of The Gravity Effects on Pool Boiling Heat Transfer via High-Fidelity Simulations](https://www.sciencedirect.com/science/article/abs/pii/S0017931021009315?dgcid=author#!)
+
+To organize computational experiments we use Jobrunner (https://github.com/akashdhruv/Jobrunner).
 
 ### AMReX
 
@@ -43,21 +48,30 @@ Update `PATH` to include `$HOME/local/bin` where `jobrunner` command line interf
 ### Organization
 
 ```
-$ tree Project
+$ tree Boiling-Simulations
+
 ├── Jobfile
 ├── environment.sh
-├── JobObject1
-|── JobObject2
-    ├── Jobfile
-    ├── flash.par
-    ├── flashx
-    ├── setupScript.sh
-    ├── submitScript.sh
-    ├── preProcess.sh
-    ├── Config1
-    ├── Config2
+├── sites
+    ├── hello
+        ├── Makefile.h
+├── software
+    ├── Flash-X
+    ├── AMReX
+    ├── FlashKit
+├── simulation
+    ├── PoolBoiling
         ├── Jobfile
-        ├── flash.par
+        ├── flashOptions.sh
+        ├── example2D
+            ├── Jobfile
+            ├── flashOptions.sh
+            ├── flashBuild.sh
+            ├── flashRun.sh
+            ├── flash.par
+    ├── FlowBoiling
+├── analysis
+    ├── requirements.txt
 ```
 
 Setup software stack
