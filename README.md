@@ -4,13 +4,21 @@
 
 # <p align="center"> Boiling Simulations </p>
 
-This repository provides a template for a lab notebook for running pool and flow boiling simulations using Flash-X (https://github.com/Flash-X/Flash-X), a multiphysics scientific software instrument. This notebook serves as a tutorial to setup production simulations for multiphase fluid-flow problems, archive data, perform visualization and data analysis, and maintain records 
+This repository provides a template for a lab notebook for running pool and flow boiling simulations using Flash-X (https://github.com/Flash-X/Flash-X), a multiphysics scientific software instrument. Design and organization of this notebook serves as a tutorial to setup production simulations for multiphase fluid-flow problems, archive data, perform visualization and data analysis, and maintain records/notes for scientific reproducibility and accountability. 
 
+Primary goal of this project is to provide a more oragnized interface to work with Flash-X
 
+## Dependencies
+
+### Jobrunner
 
 Management of simulations and software stack is performed using Jobrunner (https://github.com/akashdhruv/Jobrunner)
 
-## Dependencies
+### AMReX
+
+### FlashKit
+
+### BoxKit
 
 
 ## Organization 
