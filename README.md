@@ -111,7 +111,7 @@ To visualize data using ParaView run following from the working directory of a j
 flashkit create xdmf -b <begin_number> -e <end_number>
 ```
 
-The `<begin_number>` and `<end_number>` refer to the files containing the pattern `*_hdf5_plt_cnt_*`
+The `<begin_number>` and `<end_number>` refer to the files containing the pattern `*_hdf5_plt_cnt_*`. The resulting `*.xmf` file is paraview compatible.
 
 ## Contribution
 
