@@ -6,17 +6,17 @@
 # as standard module on a cluster. If not,
 # build your own MPI and set
 # PATH, LD_LIBRARY_PATH
-#
+
 # Flash-X requires that an environment variable
-# MPI_PATH is available that points to the
+# MPI_HOME is available that points to the
 # path to MPI installation
 module load openmpi-4.1.1
 
 # Load parallel HDF5 library. If serial HDF5
 # is present alter setup options for Flash-X
-#
+
 # Flash-X requires that an environment variable
-# HDF5_PATH is available that points to the 
+# HDF5_HOME is available that points to the 
 # path of HDF5 installation
 module load hdf5-1.8.20
 
