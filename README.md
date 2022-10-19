@@ -2,7 +2,7 @@
 
 # <p align="center"> Boiling Simulations </p>
 
-This repository provides a template for a lab notebook for running pool and flow boiling simulations using Flash-X (https://flash-x.org), a multiphysics scientific software instrument. Design and organization of this notebook serves as a tutorial to setup production simulations for multiphase fluid-flow problems, archive data, perform visualization and data analysis, and maintain records/notes for scientific reproducibility and accountability. 
+This repository provides a template for a lab notebook for running pool and flow boiling simulations using Flash-X (https://flash-x.org), a multiphysics simulation software instrument. Design and organization of this notebook serves as a tutorial to setup production simulations for multiphase fluid-flow problems, archive data, perform visualization and data analysis, and maintain records/notes for scientific reproducibility and accountability. 
 
 Primary goal for this project is to provide a more organized interface to work with Flash-X, and enable its use for data acquisition for various applications involving high-fidelity simulations and machine learning.
 
