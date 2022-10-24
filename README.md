@@ -20,7 +20,7 @@ Flash-X (https://github.com/Flash-X/Flash-X) addresses the first requirement by 
 - [A Formulation for High-Fidelity Simulations of Pool Boiling in Low Gravity](https://www.sciencedirect.com/science/article/abs/pii/S030193221930165X)
 - [An Investigation of The Gravity Effects on Pool Boiling Heat Transfer via High-Fidelity Simulations](https://www.sciencedirect.com/science/article/abs/pii/S0017931021009315?dgcid=author#!)
 
-Building Flash-X in AMReX mode requires that Message Passing Interface (MPI) and Hierarchical Data Format (HDF5) libraries are installed and available for use on platforms where users wish to run their simulations. Path to location of the libraries should be defined in ``environment.sh`` located in the project root directory. Details for setting these variables are provided in subsequent sections.
+Building Flash-X in AMReX mode requires that Message Passing Interface (MPI) library is installed and available for use on platforms where users wish to run their simulations. Path to location of the library should be defined in ``environment.sh`` located in the project root directory. Details for setting these variables are provided in subsequent sections.
 
 Organization of computational experiments is implemented using Jobrunner, which enables reuse of files/scripts along directory trees and ensures strict organization rules. Details on Jobrunner are provided separately in its own repository (https://github.com/akashdhruv/Jobrunner), and can be installed by running,
 
