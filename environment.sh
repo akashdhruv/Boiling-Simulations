@@ -12,16 +12,11 @@
 # path to MPI installation
 module load openmpi-4.1.1
 
-# Load parallel HDF5 library. If serial HDF5
-# is present alter setup options for Flash-X
-
-# Flash-X requires that an environment variable
-# HDF5_HOME is available that points to the 
-# path of HDF5 installation
-module load hdf5-1.8.20
-
 # Export project home
 export PROJECT_HOME=$(realpath .)
+
+# Path to parallel HDF5 installtion with fortran support
+export HDF5_HOME="$(realpath software/HDF5)/install"
 
 # Store path to amrex as environment variable
 export AMREX2D_HOME="$(realpath software/AMReX)/install/2D"

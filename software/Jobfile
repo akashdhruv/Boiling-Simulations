@@ -3,6 +3,7 @@
 # List of files that need to be included when
 # setting up a job
 job.setup = [
+    "setupHDF5.sh",
     "setupAMReX.sh",
     "setupFlashKit.sh",
     "setupFlash.sh",

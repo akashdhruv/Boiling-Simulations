@@ -8,3 +8,6 @@
 [submodule "software/FlashKit"]
 	path = software/FlashKit
 	url = git@github.com:akashdhruv/FlashKit.git
+[submodule "software/HDF5"]
+	path = software/HDF5
+	url = git@github.com:HDFGroup/hdf5.git
