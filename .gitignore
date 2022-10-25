@@ -7,9 +7,7 @@ __pycache__
 *.out
 amr_*
 Backtrace*
-job.setup
-job.submit
-job.input
+job.target
 flashx
 unitTest*
 core*
