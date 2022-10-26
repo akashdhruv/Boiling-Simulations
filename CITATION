@@ -1,0 +1,10 @@
+@software{akash_dhruv_2022_7255616,
+  author       = {Akash Dhruv},
+  title        = {akashdhruv/Boiling-Simulations: October 2022},
+  month        = oct,
+  year         = 2022,
+  publisher    = {Zenodo},
+  version      = {22.10},
+  doi          = {10.5281/zenodo.7255616},
+  url          = {https://doi.org/10.5281/zenodo.7255616}
+}
