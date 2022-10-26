@@ -1,0 +1,20 @@
+/data/homezvol1/fandi/20221026/Boiling-Simulations/software/Flash-X/bin/setup.py incompFlow/PoolBoiling -auto -maxblocks=100 +amrex +parallelIO -site=/data/homezvol1/fandi/20221026/Boiling-Simulations/sites/hello SimForceInOut=True IOWriteGridFiles=True -2d -nxb=16 -nyb=16 
+
+Expanded Command line
+--with-library=mpi --with-unit=IO --unit=Grid --gridinterpolation=monotonic incompFlow/PoolBoiling --auto --maxblocks=100 --unit=Grid/GridMain/AMR/Amrex --index-reorder --site=/data/homezvol1/fandi/20221026/Boiling-Simulations/sites/hello --2d --nxb=16 --nyb=16
+
+Defined Setup Variables:
+
+FlashAvoidOrrery --> True <class 'bool'>
+Grid --> Amrex <class 'str'>
+GridIndexReordered --> True <class 'bool'>
+IOWriteGridFiles --> True <class 'bool'>
+SimForceInOut --> True <class 'bool'>
+fixedBlockSize --> True <class 'bool'>
+maxBlocks --> 100 <class 'int'>
+nDim --> 2 <class 'int'>
+nxb --> 16 <class 'int'>
+nyb --> 16 <class 'int'>
+nzb --> 1 <class 'int'>
+parallelIO --> True <class 'bool'>
+

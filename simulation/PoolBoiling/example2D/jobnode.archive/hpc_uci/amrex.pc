@@ -1,0 +1,17 @@
+# AMReX Version: 21.05
+
+prefix=/data/homezvol1/fandi/20221026/Boiling-Simulations/software/AMReX/install/2D
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+fflags= -g -O3 -ffree-line-length-none -fno-range-check -fno-second-underscore -fimplicit-none  
+
+Name: amrex
+Description: Software Framework for Block Structed AMR
+Version:
+URL: https://github.com/AMReX-Codes/amrex
+Requires:
+Cflags: -I${includedir}  -Werror=return-type -g -O3  -pthread  
+Libs: -L${libdir} -lamrex -L/opt/apps/openmpi/4.1.2/gcc/8.4.0/lib -Wl,-rpath,/opt/apps/openmpi/4.1.2/gcc/8.4.0/lib -L/opt/apps/gcc/8.4.0/lib64 -Wl,-rpath,/opt/apps/gcc/8.4.0/lib64 -L/opt/apps/gcc/8.4.0/lib -Wl,-rpath,/opt/apps/gcc/8.4.0/lib -L/opt/apps/gcc/8.4.0/lib/gcc/x86_64-pc-linux-gnu/8.4.0 -Wl,-rpath,/opt/apps/gcc/8.4.0/lib/gcc/x86_64-pc-linux-gnu/8.4.0 -L/opt/apps/gcc/8.4.0/lib/gcc/x86_64-pc-linux-gnu/8.4.0/../../../../lib64/  -pthread -I/opt/apps/openmpi/4.1.2/gcc/8.4.0/lib -L/opt/apps/openmpi/4.1.2/gcc/8.4.0/lib -Wl,-rpath -Wl,/opt/apps/openmpi/4.1.2/gcc/8.4.0/lib -Wl,--enable-new-dtags -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lmpi -lmpi -lgfortran -lquadmath
+Libs.private: 
