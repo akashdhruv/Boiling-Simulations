@@ -114,6 +114,21 @@ flashkit create xdmf -b <begin_number> -e <end_number>
 
 The `<begin_number>` and `<end_number>` refer to the files containing the pattern `*_hdf5_plt_cnt_*`. The resulting `*.xmf` file is ParaView compatible.
 
+## Citation
+
+```
+@software{akash_dhruv_2022_7255616,
+  author       = {Akash Dhruv},
+  title        = {akashdhruv/Boiling-Simulations: October 2022},
+  month        = oct,
+  year         = 2022,
+  publisher    = {Zenodo},
+  version      = {22.10},
+  doi          = {10.5281/zenodo.7255616},
+  url          = {https://doi.org/10.5281/zenodo.7255616}
+}
+```
+
 ## Contribution
 
 The `main` branch is protected. Please create pull request from your forks to this branch in order to update this lab notebook.
