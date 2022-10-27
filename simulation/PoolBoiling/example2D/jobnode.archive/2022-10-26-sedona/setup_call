@@ -1,0 +1,20 @@
+/home/akash/jobs/boiling-simulations/software/Flash-X/bin/setup.py incompFlow/PoolBoiling -auto -maxblocks=100 +amrex +parallelIO -site=/home/akash/jobs/boiling-simulations/sites/hello SimForceInOut=True IOWriteGridFiles=True -2d -nxb=16 -nyb=16 
+
+Expanded Command line
+--with-library=mpi --with-unit=IO --unit=Grid --gridinterpolation=monotonic incompFlow/PoolBoiling --auto --maxblocks=100 --unit=Grid/GridMain/AMR/Amrex --index-reorder --site=/home/akash/jobs/boiling-simulations/sites/hello --2d --nxb=16 --nyb=16
+
+Defined Setup Variables:
+
+FlashAvoidOrrery --> True <type 'bool'>
+Grid --> Amrex <type 'str'>
+GridIndexReordered --> True <type 'bool'>
+IOWriteGridFiles --> True <type 'bool'>
+SimForceInOut --> True <type 'bool'>
+fixedBlockSize --> True <type 'bool'>
+maxBlocks --> 100 <type 'int'>
+nDim --> 2 <type 'int'>
+nxb --> 16 <type 'int'>
+nyb --> 16 <type 'int'>
+nzb --> 1 <type 'int'>
+parallelIO --> True <type 'bool'>
+
