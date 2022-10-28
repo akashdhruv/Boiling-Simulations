@@ -9,7 +9,7 @@ import boxkit.api as boxkit
 filename = (
     os.getenv("SIMULATION_HOME")
     + os.sep
-    + "jobnode.archive/2022-10-26-sedona/INS_Pool_Boiling_hdf5_plt_cnt_0001"
+    + "example2D/jobnode.archive/2022-10-26-sedona/INS_Pool_Boiling_hdf5_plt_cnt_0001"
 )
 
 # Create a boxkit dataset
@@ -26,7 +26,7 @@ for block in dataset.blocklist:
 
     # print block center
     # print(block.xcenter, block.ycenter)
-   
+
     # print block bound
     # print(block.xmin, block.xmax, block.ymin, block.ymax)
 
