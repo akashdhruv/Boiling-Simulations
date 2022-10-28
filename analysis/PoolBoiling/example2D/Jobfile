@@ -1,0 +1,5 @@
+# Jobfile for analysis
+schedular.command = "bash"
+
+# add submit scripts
+job.submit = ["run.sh"]
