@@ -1,0 +1,17 @@
+# AMReX Version: 21.05
+
+prefix=/home/akash/jobs/boiling-simulations/software/AMReX/install/2D
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+fflags= -g -O3 -ffree-line-length-none -fno-range-check -fno-second-underscore -fimplicit-none  
+
+Name: amrex
+Description: Software Framework for Block Structed AMR
+Version:
+URL: https://github.com/AMReX-Codes/amrex
+Requires:
+Cflags: -I${includedir}  -Werror=return-type -g -O3  -pthread  
+Libs: -L${libdir} -lamrex -L/usr/lib/gcc/x86_64-linux-gnu/9/  -pthread -I/usr/local/openmpi-4.1.1/lib -Wl,-rpath -Wl,/usr/local/openmpi-4.1.1/lib -Wl,--enable-new-dtags -L/usr/local/openmpi-4.1.1/lib -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lmpi -lmpi -lgfortran -lquadmath
+Libs.private: 
