@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-JobWorkDir="/home/akash/jobs/boiling-simulations/analysis/PoolBoiling/example2D"
+JobWorkDir="/home/akash/jobs/boiling-simulations/analysis/PoolBoiling/parseExample"
 
 cd /home/akash/jobs/boiling-simulations
 
@@ -35,7 +35,10 @@ export FLASH_HOME=$(realpath software/Flash-X)
 # Path to Flash-X site/makefile
 FlashSite=$(realpath sites/hello)
 
-cd /home/akash/jobs/boiling-simulations/analysis/PoolBoiling/example2D
+cd /home/akash/jobs/boiling-simulations/analysis/PoolBoiling/parseExample
+
+# set environment variable for simulation directory
+export SIMULATION_HOME=$PROJECT_HOME/simulation/PoolBoiling/example2D
 
 # run the python scripts
 python3 parseData.py

@@ -2,4 +2,4 @@
 schedular.command = "bash"
 
 # add submit scripts
-job.submit = ["run.sh"]
+job.submit = ["runScript.sh"]

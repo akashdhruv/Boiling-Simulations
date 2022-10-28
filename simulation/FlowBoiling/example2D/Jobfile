@@ -21,6 +21,13 @@ job.archive = [
     "amrex.pc",
 ]
 
+# list of file/patterns to remove during clean
+job.clean = [
+    "flashx",
+    "unitTest*",
+    "*.out",
+]
+
 # job input file name. All config.input in
 # directory tree will be combined to form
 # job.input in target directory

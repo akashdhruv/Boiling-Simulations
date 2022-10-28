@@ -7,9 +7,9 @@ import boxkit.api as boxkit
 # set variable for the example HDF5
 # file for an instance in time
 filename = (
-    os.getenv("PROJECT_HOME")
+    os.getenv("SIMULATION_HOME")
     + os.sep
-    + "simulation/PoolBoiling/example2D/jobnode.archive/2022-10-26-sedona/INS_Pool_Boiling_hdf5_plt_cnt_0001"
+    + "jobnode.archive/2022-10-26-sedona/INS_Pool_Boiling_hdf5_plt_cnt_0001"
 )
 
 # Create a boxkit dataset
