@@ -1,3 +1,5 @@
+toml
+click
 numpy
 boxkit
 plotille
