@@ -1,2 +1,0 @@
-# add submit scripts
-job.submit = ["simPath.sh"]

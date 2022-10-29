@@ -1,6 +1,6 @@
 __pycache__
 *hdf5*
-!simulation/PoolBoiling/example2D/jobnode.archive/2022-10-26-sedona/INS_Pool_Boiling_hdf5_plt_cnt_0001
+!simulation/PoolBoiling/Example2D/jobnode.archive/2022-10-26-sedona/INS_Pool_Boiling_hdf5_plt_cnt_0001
 *.dat
 *.png
 !*.log
