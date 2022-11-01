@@ -2,28 +2,37 @@
 # environment variables for compilers
 # and external libraries
 
-# MPI module. This should be available
-# as standard module on a cluster. If not,
-# build your own MPI and set
-# PATH, LD_LIBRARY_PATH
+# Set this to the required 
+# site directory, refer to 
+# sites/README.md for details
+JobSite="sedona"
 
-# Flash-X requires that an environment variable
-# MPI_HOME is available that points to the
-# path to MPI installation
-module load openmpi-4.1.1
+# Get path to actual site directory
+JobSiteDir=$(realpath sites/$JobSite)
+
+# Load modules for the
+# site directory
+source $JobSiteDir/modules.sh
+
+# Get mpicc path and
+# then remove /bin/mpicc 
+# to get set MPI_HOME
+MPI_HOME=$(which mpicc)
+MPI_REMOVE=/bin/mpicc
+export MPI_HOME=${MPI_HOME//$MPI_REMOVE/}
 
 # Export project home
 export PROJECT_HOME=$(realpath .)
 
 # Path to parallel HDF5 installtion with fortran support
-export HDF5_HOME="$(realpath software/HDF5)/install"
+export HDF5_HOME="$(realpath software/HDF5)/install-$JobSite"
 
 # Store path to amrex as environment variable
-export AMREX2D_HOME="$(realpath software/AMReX)/install/2D"
-export AMREX3D_HOME="$(realpath software/AMReX)/install/3D"
+export AMREX2D_HOME="$(realpath software/AMReX)/install-$JobSite/2D"
+export AMREX3D_HOME="$(realpath software/AMReX)/install-$JobSite/3D"
 
 # Path to Flash-X
 export FLASH_HOME=$(realpath software/Flash-X)
 
 # Path to Flash-X site/makefile
-FlashSite=$(realpath sites/hello)
+FlashSite=$JobSiteDir

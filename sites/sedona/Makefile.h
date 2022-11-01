@@ -1,5 +1,5 @@
 #----------------------------------------------------------------------------
-# FLASH-X makefile definitions for (x86-64 Ubuntu)
+# Flash-X Makefile definitions for (x86-64 Ubuntu)
 #----------------------------------------------------------------------------
 
 #----------------------------------------------------------------------------
@@ -108,7 +108,6 @@ LIB_HYPRE  = -L${HYPRE_PATH}/lib -lHYPRE
 LIB_AMREX  = -L${AMREX_PATH}/lib -lamrex -lpthread
 LIB_STDCXX = -lstdc++
 LIB_LAPACK = -llapack -lblas
-LIB_RUNTIME = -L/home/akash/Desktop/Akash/Postdoc/orchestrationruntime/runtime_2d_AMReX -lruntime
 
 # Uncomment the following line to use electic fence memory debugger.
 # Need the following environmental variable (see env.sh):
