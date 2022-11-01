@@ -7,12 +7,9 @@
 # sites/README.md for details
 JobSite="sedona"
 
-# Get path to actual site directory
-JobSiteDir=$(realpath sites/$JobSite)
-
-# Load modules for the
-# site directory
-source $JobSiteDir/modules.sh
+# Load modules for
+# the site directory
+source $(realpath sites/$JobSite)/modules.sh
 
 # Get mpicc path and
 # then remove /bin/mpicc 
@@ -35,4 +32,4 @@ export AMREX3D_HOME="$(realpath software/AMReX)/install-$JobSite/3D"
 export FLASH_HOME=$(realpath software/Flash-X)
 
 # Path to Flash-X site/makefile
-FlashSite=$JobSiteDir
+FlashSite=$(realpath sites/$JobSite)
