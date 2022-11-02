@@ -26,6 +26,9 @@ job.clean = [
     "flashx",
     "unitTest*",
     "*.out",
+    "Makefile.h",
+    "setup_call",
+    "amrex.pc",
 ]
 
 # job input file name. All config.input in
@@ -46,6 +49,6 @@ job.setup = [
 # list of files to be included
 # in submit script
 job.submit = [
-    "preProcess.sh",
+    "flashPreProcess.sh",
     "flashRun.sh",
 ]

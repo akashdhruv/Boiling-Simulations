@@ -5,7 +5,7 @@
 git submodule update --init AMReX
 
 # chdir into amrex and checkout desired branch
-cd AMReX && git checkout cff96a9
+cd AMReX && git checkout $AMReX_TAG
 
 # configure and install amrex in 2D
 make clean

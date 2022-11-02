@@ -12,8 +12,8 @@
 
 # List of files that need to be included when
 # setting up a job
-job.setup = ["environment.sh"]
+job.setup = ["inputs.sh", "environment.sh"]
 
 # List of files that need to be included when
 # submitting a job
-job.submit = ["environment.sh"]
+job.submit = ["inputs.sh", "environment.sh"]

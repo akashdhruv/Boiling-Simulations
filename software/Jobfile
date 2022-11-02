@@ -6,5 +6,5 @@ job.setup = [
     "setupHDF5.sh",
     "setupAMReX.sh",
     "setupFlashKit.sh",
-    "setupFlash.sh",
+    "setupFlashX.sh",
 ]

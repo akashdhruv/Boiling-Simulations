@@ -1,5 +1,0 @@
-# TOML configuration file for `jobrunner`.
-
-# list of files that need to be
-# included when setting up a job
-job.setup = ["flashOptions.sh"]
