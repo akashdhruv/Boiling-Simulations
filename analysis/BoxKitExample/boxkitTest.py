@@ -7,15 +7,14 @@ import click
 import boxkit.api as boxkit
 
 
-@click.command(name="example")
-@click.option("--input-key", required=True, help="input from toml configuration file")
-def example(input_key):
+@click.command(name="boxkit-test")
+@click.option("--input-file", required=True, help="input from toml configuration file")
+def boxkit_test(input_file):
     """
-    Script to run the example
+    Script to run boxkit test
     """
-    # load the inputs.toml and
-    # get inputs configuration
-    input_dict = toml.load("inputs.toml")[input_key]
+    # load the inputs.toml and get inputs configuration
+    input_dict = toml.load(input_file)
 
     # empty list for dataset
     dataset_list = []
@@ -54,4 +53,4 @@ def example(input_key):
 
 
 if __name__ == "__main__":
-    example()
+    boxkit_test()
