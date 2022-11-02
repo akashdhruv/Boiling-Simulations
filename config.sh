@@ -1,8 +1,6 @@
-# inputs file should be edited for desired 
-# configuration
+# This file should be edited for desired configuration
 
-# Set this to the required site directory, refer to
-# sites/README.md for details
+# Set this to the required site directory, refer to sites/README.md for details
 SiteName="sedona"
 
 # Set TAG/SHA-1 for AMReX
