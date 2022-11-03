@@ -10,10 +10,9 @@
 # are combined to a single dictionary when executing
 # jobrunner commands
 
-# List of files that need to be included when
-# setting up a job
-job.setup = ["config.sh", "environment.sh"]
+# Defined scripts that need to be included 
+# when either setting up or submitting a job
 
-# List of files that need to be included when
-# submitting a job
-job.submit = ["config.sh", "environment.sh"]
+[job]
+setup = ["config.sh", "environment.sh"]
+submit = ["config.sh", "environment.sh"]

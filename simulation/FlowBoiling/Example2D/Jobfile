@@ -1,54 +1,19 @@
 # TOML configuration file for `jobrunner`.
 
-# job schedular command for deploying
-# simulations
-schedular.command = "sbatch"
+# schedular configuration
+[schedular]
+command = "sbatch"
+options = ["#SBATCH --ntasks=5",
+           "#SBATCH -t 0-30:00",
+           "#SBATCH --job-name=flow_boiling"]
 
-# schedular resources requirement
-# job name etc
-schedular.options = [
-    "#SBATCH --ntasks=5",
-    "#SBATCH -t 0-30:00",
-    "#SBATCH --job-name=flow_boiling",
-]
-
-# list of file/patterns to archive
-job.archive = [
-    "INS*",
-    "*_hdf5_*",
-    "Makefile.h",
-    "setup_call",
-    "amrex.pc",
-]
-
-# list of file/patterns to remove during clean
-job.clean = [
-    "flashx",
-    "unitTest*",
-    "*.out",
-    "Makefile.h",
-    "setup_call",
-    "amrex.pc",
-]
-
-# job input file name. All config.input in
-# directory tree will be combined to form
-# job.input in target directory
-job.input = ["flash.par"]
-
-# target script that runs the job
-job.target = "flashx"
-
-# list of files that need to be
-# included when setting up a job
-job.setup = [
-    "flashOptions.sh",
-    "flashBuild.sh",
-]
-
-# list of files to be included
-# in submit script
-job.submit = [
-    "flashPreProcess.sh",
-    "flashRun.sh",
-]
+# job configuration for setting up and submitting jobs,
+# archive and clean artifacts, defining target and
+# input scripts
+[job]
+setup = ["flashOptions.sh", "flashBuild.sh"]
+submit = ["flashPreProcess.sh", "flashRun.sh"]
+input = ["flash.par"]
+target = "flashx"
+archive = ["INS*", "*_hdf5_*", "Makefile.h", "setup_call", "amrex.pc"]
+clean = ["flashx", "unitTest*", "*.out", "Makefile.h", "setup_call", "amrex.pc"]

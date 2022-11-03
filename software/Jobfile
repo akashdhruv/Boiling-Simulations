@@ -1,10 +1,4 @@
 # TOML configuration file for `jobrunner`.
 
-# List of files that need to be included when
-# setting up a job
-job.setup = [
-    "setupHDF5.sh",
-    "setupAMReX.sh",
-    "setupFlashKit.sh",
-    "setupFlashX.sh",
-]
+[job]
+setup = ["setupHDF5.sh", "setupAMReX.sh", "setupFlashKit.sh", "setupFlashX.sh"]

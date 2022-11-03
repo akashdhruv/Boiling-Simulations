@@ -1,11 +1,11 @@
-# Jobfile for analysis
-schedular.command = "bash"
+# jobrunner configuration file
 
-# input files
-job.input = ["inputs.toml"]
+# schedular configuration
+[schedular]
+command = "bash"
 
-# job target
-job.target = "boxkitTest.py"
-
-# add submit scripts
-job.submit = ["runTest.sh"]
+# job configuration
+[job]
+input = ["inputs.toml"]
+target = "boxkitTest.py"
+submit = ["runTest.sh"]
