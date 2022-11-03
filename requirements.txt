@@ -1,6 +1,6 @@
 toml
 click
-numpy
 boxkit
+pyjobrunner
 plotille
 matplotlib

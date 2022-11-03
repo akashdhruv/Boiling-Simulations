@@ -1,0 +1,41 @@
+#!/usr/bin/env python3
+
+import click
+
+
+@click.command(name="configure")
+@click.option("--site", "-s", type=str, required=True, help="Site Directory")
+@click.option("--amrex-tag", default="cff96a9", type=str, help="AMReX Tag/SHA-1")
+@click.option("--flashx-tag", default="37872ca1", type=str, help="Flash-X Tag/SHA-1")
+@click.option("--flashkit-tag", default="364c99d", type=str, help="FlashKit Tag/SHA-1")
+@click.option("--hdf5-tag", default="93754ca", type=str, help="HDF5 Tag/SHA-1")
+def configure(site, amrex_tag, flashx_tag, flashkit_tag, hdf5_tag):
+    """
+    \b
+    Configuration command to generate config.sh
+    from user defined values
+    """
+    print("Generating configuration file")
+
+    with open("config.sh", "w") as config_file:
+
+        config_file.write("# This file is generated using configuration script\n")
+        config_file.write("\n")
+        config_file.write("# Site directory, refer to sites/README.md for details\n")
+        config_file.write(f'SiteName="{site}"\n')
+        config_file.write("\n")
+        config_file.write("# TAG/SHA-1 for AMReX\n")
+        config_file.write(f'AMReX_TAG="{amrex_tag}"\n')
+        config_file.write("\n")
+        config_file.write("# TAG/SHA-1 for Flash-X\n")
+        config_file.write(f'FlashX_TAG="{flashx_tag}"\n')
+        config_file.write("\n")
+        config_file.write("# TAG/SHA-1 for FlashKit\n")
+        config_file.write(f'FlashKit_TAG="{flashkit_tag}"\n')
+        config_file.write("\n")
+        config_file.write("# TAG/SHA-1 for HDF5\n")
+        config_file.write(f'HDF5_TAG="{hdf5_tag}"\n')
+
+
+if __name__ == "__main__":
+    configure()
