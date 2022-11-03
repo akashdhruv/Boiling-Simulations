@@ -1,12 +1,16 @@
-# Bash script for `jobrunner`
-# to install HDF5
+# Bash script for `jobrunner` to install HDF5
 
 if [[ $BuildHDF5 == "TRUE" ]]; then
-	# Initialize amrex submodule
-	git submodule update --init HDF5
 
-	# chdir into amrex and checkout desired branch
-	cd HDF5 && git checkout $HDF5_TAG
+	# Setup HDF5
+	if [ ! -d "HDF5" ]; then
+		git clone git@github.com:HDFGroup/hdf5.git --branch develop HDF5 && cd HDF5
+	else
+		cd HDF5 && git checkout develop && git pull
+	fi
+
+	# checkout desired branch
+	git checkout $HDF5_TAG
 
 	# configure HDF5
 	./autogen.sh

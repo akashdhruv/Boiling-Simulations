@@ -1,5 +1,9 @@
-# initialize Flash-X submodule
-git submodule update --init Flash-X
+# Setup Flash-X
+if [ ! -d "Flash-X" ]; then
+	git clone git@github.com:Flash-X/Flash-X --branch main Flash-X && cd Flash-X
+else
+	cd Flash-X && git checkout main && git pull
+fi
 
-# chdir into Flash-X and checkout desired SHA
-cd Flash-X && git checkout $FlashX_TAG 
+# checkout desired SHA
+git checkout $FlashX_TAG

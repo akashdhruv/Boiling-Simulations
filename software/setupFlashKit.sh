@@ -1,8 +1,12 @@
-# initialize FlashKit submodule
-git submodule update --init FlashKit
+# Setup FlashKit
+if [ ! -d "FlashKit" ]; then
+	git clone git@github.com:akashdhruv/FlashKit --branch main FlashKit && cd FlashKit
+else
+	cd FlashKit && git checkout main && git pull
+fi
 
-# chdir into FlashKit and checkout desired branch
-cd FlashKit && git checkout $FlashKit_TAG
+# checkout desired branch
+git checkout $FlashKit_TAG
 
 # install in development mode
 python3 setup.py develop --user
