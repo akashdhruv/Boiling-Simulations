@@ -1,4 +1,9 @@
 # TOML configuration file for `jobrunner`.
 
 [job]
-setup = ["setupHDF5.sh", "setupAMReX.sh", "setupFlashKit.sh", "setupFlashX.sh"]
+setup = [
+    "setupHDF5.sh",
+    "setupAMReX.sh",
+    "setupFlashKit.sh",
+    "setupFlashX.sh",
+]

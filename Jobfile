@@ -10,7 +10,7 @@
 # are combined to a single dictionary when executing
 # jobrunner commands
 
-# Defined scripts that need to be included 
+# Defined scripts that need to be included
 # when either setting up or submitting a job
 
 [job]
