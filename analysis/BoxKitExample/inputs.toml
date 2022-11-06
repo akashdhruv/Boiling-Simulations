@@ -1,5 +1,0 @@
-# TOML configuration file for inputs
-
-filenames = [
-    "simulation/PoolBoiling/Example2D/jobnode.archive/2022-10-26-sedona/INS_Pool_Boiling_hdf5_plt_cnt_0001"
-]

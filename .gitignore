@@ -1,6 +1,5 @@
 __pycache__
 *hdf5*
-!simulation/PoolBoiling/Example2D/jobnode.archive/2022-10-26-sedona/INS_Pool_Boiling_hdf5_plt_cnt_0001
 *.dat
 *.png
 !*.log
@@ -12,3 +11,6 @@ job.target
 flashx
 unitTest*
 core*
+__pycache__
+*.ipynb_checkpoints
+!simulation/PoolBoiling/Example2D/jobnode.archive/2022-10-26-sedona/INS_Pool_Boiling_hdf5_plt_cnt_0001
